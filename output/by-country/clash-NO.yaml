@@ -15,8 +15,15 @@ proxies:
   reality-opts:
     public-key: 5RCgAVjaT7hwdVIKAEULswXGqR127ZOZV6X17nEhYk8
   servername: bowandbead.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇳🇴 NO 02 - xiaohe
+  type: ss
+  server: 185.213.23.63
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  udp: true
+- name: 🇳🇴 NO 03 - xiaohe
   type: ss
   server: 185.213.23.63
   port: 990
@@ -30,6 +37,7 @@ proxy-groups:
   - AUTO
   - 🇳🇴 NO 01 - xiaohe
   - 🇳🇴 NO 02 - xiaohe
+  - 🇳🇴 NO 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -37,5 +45,6 @@ proxy-groups:
   proxies:
   - 🇳🇴 NO 01 - xiaohe
   - 🇳🇴 NO 02 - xiaohe
+  - 🇳🇴 NO 03 - xiaohe
 rules:
 - MATCH,PROXIES
