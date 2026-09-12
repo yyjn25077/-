@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇲 AM 01 - xiaohe
+- name: 🇨🇿 CZ 01 - xiaohe
   type: vless
-  server: 104.24.31.89
+  server: fpoixf69hqt3e6d4urtb.mamadneizeh.workers.dev
   port: 443
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  uuid: 0b41f339-5809-46ef-8351-b03fdc441539
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  servername: FpoiXF69hQT3E6d4URTB.MamADNEIZeH.WorKers.DEV
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /vl/lYNtP7z8pJUmfp01tz5wEnuDujJtZ?ed=2560
     headers:
-      Host: rayan-007.nastaran.dpdns.org
+      Host: fpoixf69hqt3e6d4urtb.mamadneizeh.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇲 AM 01 - xiaohe
+  - 🇨🇿 CZ 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇲 AM 01 - xiaohe
+  - 🇨🇿 CZ 01 - xiaohe
 rules:
 - MATCH,PROXIES
