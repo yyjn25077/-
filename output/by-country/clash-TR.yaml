@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  type: ss
+  server: 185.39.204.3
+  port: 8098
+  cipher: chacha20-ietf-poly1305
+  password: PluSKSrbtxTvlVv7BOUwn4
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   type: vless
   server: connect3.nyxserver.ir
   port: 8444
@@ -13,20 +20,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: connect3.nyxserver.ir
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  type: vless
-  server: 162.159.91.222
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-723a643df685
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: n3zaxce7u0es.crzl48eiuses.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/723a643df685/loc-0
-    headers:
-      Host: n3zaxce7u0es.crzl48eiuses.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
