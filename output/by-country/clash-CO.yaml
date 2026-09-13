@@ -12,17 +12,27 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇨🇴 CO 02 - xiaohe
+  type: vless
+  server: 157.137.209.135
+  port: 62145
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇴 CO 01 - xiaohe
+  - 🇨🇴 CO 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇴 CO 01 - xiaohe
+  - 🇨🇴 CO 02 - xiaohe
 rules:
 - MATCH,PROXIES
