@@ -6,58 +6,43 @@ log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - xiaohe
   type: vless
-  server: 104.21.14.116
-  port: 443
-  uuid: 566c0473-382e-aabb-c62a-f5bb00000000
+  server: 172.64.154.8
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ez-4b5fd4.appelidmymat.workers.dev
   network: ws
   ws-opts:
-    path: /sync
+    path: /?ed=2560security=tls
     headers:
-      Host: ez-4b5fd4.appelidmymat.workers.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇸🇨 SC 02 - xiaohe
   type: vless
-  server: 45.130.125.73
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-cea58e4acf49
+  server: 162.159.24.131
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: web-app-aug8yr.app-f1qsy1.workers.dev
   network: ws
   ws-opts:
-    path: /api/ws
+    path: /?ed=2560security=tls
     headers:
-      Host: web-app-aug8yr.app-f1qsy1.workers.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇸🇨 SC 03 - xiaohe
   type: vless
-  server: 45.192.224.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 172.64.229.170
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls
     headers:
-      Host: vms.lifetime17.workers.dev
-- name: 🇸🇨 SC 04 - xiaohe
-  type: vless
-  server: skk.moe
-  port: 8880
-  uuid: 25322a43-4ef3-45cc-9e96-db44bcccd7be
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: purple-disk-f68d.14-360.workers.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,7 +51,6 @@ proxy-groups:
   - 🇸🇨 SC 01 - xiaohe
   - 🇸🇨 SC 02 - xiaohe
   - 🇸🇨 SC 03 - xiaohe
-  - 🇸🇨 SC 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -75,6 +59,5 @@ proxy-groups:
   - 🇸🇨 SC 01 - xiaohe
   - 🇸🇨 SC 02 - xiaohe
   - 🇸🇨 SC 03 - xiaohe
-  - 🇸🇨 SC 04 - xiaohe
 rules:
 - MATCH,PROXIES
