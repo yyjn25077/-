@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
   servername: at.quattro-tech.ru
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇦🇹 AT 02 - xiaohe
   type: ss
   server: 82.110.60.9

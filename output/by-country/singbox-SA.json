@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇷 GR 01 - xiaohe"
+        "🇸🇦 SA 01 - xiaohe",
+        "🇸🇦 SA 02 - xiaohe",
+        "🇸🇦 SA 03 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇷 GR 01 - xiaohe"
+        "🇸🇦 SA 01 - xiaohe",
+        "🇸🇦 SA 02 - xiaohe",
+        "🇸🇦 SA 03 - xiaohe"
       ],
       "url": "https://www.google.com/generate_204"
     },
