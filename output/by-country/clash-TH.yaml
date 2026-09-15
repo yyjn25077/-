@@ -19,6 +19,20 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: 🇹🇭 TH 02 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v2ray.simspeedup.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 TH 03 - xiaohe
   type: vmess
   server: 118.193.57.167
   port: 49667
@@ -40,6 +54,7 @@ proxy-groups:
   - AUTO
   - 🇹🇭 TH 01 - xiaohe
   - 🇹🇭 TH 02 - xiaohe
+  - 🇹🇭 TH 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -47,5 +62,6 @@ proxy-groups:
   proxies:
   - 🇹🇭 TH 01 - xiaohe
   - 🇹🇭 TH 02 - xiaohe
+  - 🇹🇭 TH 03 - xiaohe
 rules:
 - MATCH,PROXIES
