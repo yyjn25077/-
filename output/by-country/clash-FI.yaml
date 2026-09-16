@@ -71,18 +71,16 @@ proxies:
       Host: c12.com
 - name: 🇫🇮 FI 06 - xiaohe
   type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: d7282b41-1f2a-47bb-8593-f464fd6b6d78
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: global.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: kayko.global.ssl.fastly.net
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
