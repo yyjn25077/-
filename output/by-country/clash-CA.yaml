@@ -5,132 +5,166 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇦 加拿大 (Canada) 01 - xiaohe
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 02 - xiaohe
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 03 - xiaohe
-  type: ss
-  server: 149.22.95.183
+  type: vless
+  server: 188.114.97.6
   port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 02 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 03 - xiaohe
+  type: vless
+  server: 104.16.156.227
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
 - name: 🇨🇦 加拿大 (Canada) 04 - xiaohe
   type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  server: 104.16.10.185
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
 - name: 🇨🇦 加拿大 (Canada) 05 - xiaohe
   type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  server: 104.16.156.227
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: random
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
 - name: 🇨🇦 加拿大 (Canada) 06 - xiaohe
-  type: ss
-  server: 15.235.75.71
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: FD3rCuOsxOay
+  type: vless
+  server: 104.24.0.184
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
 - name: 🇨🇦 加拿大 (Canada) 07 - xiaohe
   type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  server: 104.21.63.28
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
 - name: 🇨🇦 加拿大 (Canada) 08 - xiaohe
-  type: ss
-  server: 51.79.85.185
-  port: 8118
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
+  type: vless
+  server: 104.21.60.109
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
 - name: 🇨🇦 加拿大 (Canada) 09 - xiaohe
   type: vless
-  server: 148.113.196.75
-  port: 8443
-  uuid: 08f96221-9b7b-4e6f-8ffe-aee8b9c9b504
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ov-canada1.09vpn.com
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 148.113.196.75
-- name: 🇨🇦 加拿大 (Canada) 10 - xiaohe
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 11 - xiaohe
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 12 - xiaohe
-  type: vmess
-  server: 23.162.200.227
+  server: 104.21.60.109
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: cfvvv-ev1.pages.dev
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /
     headers:
-      Host: ''
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 10 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 11 - xiaohe
+  type: ss
+  server: 51.222.12.127
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 12 - xiaohe
+  type: vless
+  server: 104.21.89.41
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
 - name: 🇨🇦 加拿大 (Canada) 13 - xiaohe
   type: vmess
   server: 23.162.200.198
@@ -152,27 +186,104 @@ proxies:
   reality-opts:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇨🇦 加拿大 (Canada) 15 - xiaohe
   type: vless
-  server: 184.107.106.68
+  server: 104.21.236.63
   port: 443
-  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lizca2.footballfantasyforum.com
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
 - name: 🇨🇦 加拿大 (Canada) 16 - xiaohe
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 104.24.0.184
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
 - name: 🇨🇦 加拿大 (Canada) 17 - xiaohe
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 18 - xiaohe
+  type: vless
+  server: 104.21.89.41
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 19 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 20 - xiaohe
+  type: vless
+  server: 104.16.10.233
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 21 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 22 - xiaohe
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -182,6 +293,493 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 23 - xiaohe
+  type: vless
+  server: 172.66.0.236
+  port: 2083
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 24 - xiaohe
+  type: vless
+  server: 104.21.236.63
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 25 - xiaohe
+  type: vless
+  server: 104.21.89.41
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 26 - xiaohe
+  type: ss
+  server: yyz-ca-01.blncvpn4u.cc
+  port: 9443
+  cipher: aes-256-gcm
+  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 27 - xiaohe
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 28 - xiaohe
+  type: vless
+  server: 104.16.10.199
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 29 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 30 - xiaohe
+  type: vless
+  server: 104.21.63.28
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 31 - xiaohe
+  type: vless
+  server: 104.24.0.184
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 32 - xiaohe
+  type: vless
+  server: 172.66.0.234
+  port: 2083
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 33 - xiaohe
+  type: vless
+  server: 104.16.10.233
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 34 - xiaohe
+  type: vless
+  server: 172.66.0.236
+  port: 2083
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 35 - xiaohe
+  type: vless
+  server: 104.16.10.121
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 36 - xiaohe
+  type: vless
+  server: 104.21.63.28
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 37 - xiaohe
+  type: vless
+  server: 104.21.89.41
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 38 - xiaohe
+  type: vless
+  server: 148.113.196.75
+  port: 8443
+  uuid: 08f96221-9b7b-4e6f-8ffe-aee8b9c9b504
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ov-canada1.09vpn.com
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 148.113.196.75
+- name: 🇨🇦 加拿大 (Canada) 39 - xiaohe
+  type: vless
+  server: 104.21.33.59
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 40 - xiaohe
+  type: vless
+  server: 184.107.106.68
+  port: 443
+  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lizca2.footballfantasyforum.com
+- name: 🇨🇦 加拿大 (Canada) 41 - xiaohe
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇨🇦 加拿大 (Canada) 42 - xiaohe
+  type: vless
+  server: 104.24.0.184
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 43 - xiaohe
+  type: vless
+  server: 104.16.10.121
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 44 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 45 - xiaohe
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 46 - xiaohe
+  type: ss
+  server: 149.22.95.183
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 47 - xiaohe
+  type: vless
+  server: 104.21.33.59
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 48 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 49 - xiaohe
+  type: vless
+  server: 104.21.70.228
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 50 - xiaohe
+  type: vless
+  server: 104.21.70.228
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 51 - xiaohe
+  type: vless
+  server: 104.16.3.214
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 52 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 53 - xiaohe
+  type: vless
+  server: 8.35.211.236
+  port: 443
+  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: kkkk-bq7.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kkkk-bq7.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 54 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 55 - xiaohe
+  type: vless
+  server: 104.21.60.109
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 56 - xiaohe
+  type: vless
+  server: 104.21.89.41
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 57 - xiaohe
+  type: vless
+  server: 104.21.89.41
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 58 - xiaohe
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 59 - xiaohe
+  type: vless
+  server: 104.16.10.100
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -204,6 +802,48 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 15 - xiaohe
   - 🇨🇦 加拿大 (Canada) 16 - xiaohe
   - 🇨🇦 加拿大 (Canada) 17 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 18 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 19 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 20 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 21 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 22 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 23 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 24 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 25 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 26 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 27 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 28 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 29 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 30 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 31 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 32 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 33 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 34 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 35 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 36 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 37 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 38 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 39 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 40 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 41 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 42 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 43 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 44 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 45 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 46 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 47 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 48 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 49 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 50 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 51 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 52 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 53 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 54 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 55 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 56 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 57 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 58 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 59 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -226,5 +866,47 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 15 - xiaohe
   - 🇨🇦 加拿大 (Canada) 16 - xiaohe
   - 🇨🇦 加拿大 (Canada) 17 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 18 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 19 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 20 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 21 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 22 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 23 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 24 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 25 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 26 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 27 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 28 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 29 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 30 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 31 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 32 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 33 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 34 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 35 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 36 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 37 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 38 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 39 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 40 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 41 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 42 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 43 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 44 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 45 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 46 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 47 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 48 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 49 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 50 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 51 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 52 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 53 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 54 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 55 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 56 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 57 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 58 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 59 - xiaohe
 rules:
 - MATCH,PROXIES
