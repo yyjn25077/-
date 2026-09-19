@@ -15,12 +15,18 @@ proxies:
   servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 02 - xiaohe
   type: vless
-  server: 212.87.190.124
-  port: 3
-  uuid: 6049e972-419e-43bc-932c-4032be6d1b5b
+  server: 172.67.67.178
+  port: 443
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rAyAn-007.nAsTaRaN.DpDnS.OrG
 - name: 🇪🇪 EE 03 - xiaohe
   type: vless
   server: 94.183.170.135
