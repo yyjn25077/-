@@ -6,20 +6,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 NO 01 - xiaohe",
-        "🇳🇴 NO 02 - xiaohe",
-        "🇳🇴 NO 03 - xiaohe",
-        "🇳🇴 NO 04 - xiaohe"
+        "🇸🇨 SC 01 - xiaohe",
+        "🇸🇨 SC 02 - xiaohe",
+        "🇸🇨 SC 03 - xiaohe",
+        "🇸🇨 SC 04 - xiaohe",
+        "🇸🇨 SC 05 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 NO 01 - xiaohe",
-        "🇳🇴 NO 02 - xiaohe",
-        "🇳🇴 NO 03 - xiaohe",
-        "🇳🇴 NO 04 - xiaohe"
+        "🇸🇨 SC 01 - xiaohe",
+        "🇸🇨 SC 02 - xiaohe",
+        "🇸🇨 SC 03 - xiaohe",
+        "🇸🇨 SC 04 - xiaohe",
+        "🇸🇨 SC 05 - xiaohe"
       ],
       "url": "https://www.google.com/generate_204"
     },
