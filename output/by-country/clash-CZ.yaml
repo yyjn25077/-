@@ -6,21 +6,21 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaohe
   type: vless
-  server: 195.85.23.217
+  server: 188.114.96.8
   port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  uuid: 513beae3-56e7-4954-a17e-930e06237b27
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
+  servername: Cfoi-2FX16G3-8Ry2KdXmCJ.WjESV2ILa3rxBUHpc2NsUGRaChgaWk.WOrkeRS.dev
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /vl/piIRdE9WUi24Sn3bb2oSJ?ed=2560
     headers:
-      Host: nb.lovecf.ggff.net
+      Host: cfoi-2fx16g3-8ry2kdxmcj.wjesv2ila3rxbuhpc2nsugrachgawk.workers.dev
 - name: 🇨🇿 CZ 02 - xiaohe
   type: vless
-  server: 195.85.23.29
+  server: 195.85.23.252
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -43,12 +43,12 @@ proxies:
   servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 04 - xiaohe
   type: vless
-  server: 195.85.23.217
+  server: 195.85.23.47
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -62,7 +62,21 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 05 - xiaohe
   type: vless
-  server: 195.85.23.29
+  server: 2.27.244.164
+  port: 8443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /channels/act
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇨🇿 CZ 06 - xiaohe
+  type: vless
+  server: cz1.zuoai.cf
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -72,20 +86,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 06 - xiaohe
-  type: vless
-  server: 195.85.23.219
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 07 - xiaohe
@@ -99,12 +99,12 @@ proxies:
   servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /
     headers:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 08 - xiaohe
   type: vless
-  server: 195.85.23.252
+  server: 195.85.23.88
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -113,12 +113,12 @@ proxies:
   servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 09 - xiaohe
   type: vless
-  server: cz1.zuoai.cf
+  server: 195.85.23.29
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
