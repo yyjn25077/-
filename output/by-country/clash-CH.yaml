@@ -6,45 +6,29 @@ log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - xiaohe
   type: vless
-  server: 162.159.152.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  server: 194.154.29.139
+  port: 8443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: '%2Fretrieve%2Ftxt%3Fed%3D2560'
     headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
-- name: 🇨🇭 CH 02 - xiaohe
-  type: vless
-  server: 104.18.28.234
-  port: 443
-  uuid: f6b5a6a3-f3e1-63ca-bb68-bdc400000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: netlivpn5505.ffffdsaaa.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: netlivpn5505.ffffdsaaa.workers.dev
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇭 CH 01 - xiaohe
-  - 🇨🇭 CH 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇭 CH 01 - xiaohe
-  - 🇨🇭 CH 02 - xiaohe
 rules:
 - MATCH,PROXIES
