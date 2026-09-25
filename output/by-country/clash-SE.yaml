@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇿🇦 ZA 01 - xiaohe
+- name: 🇸🇪 SE 01 - xiaohe
   type: ss
-  server: 139.84.247.164
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: tfAcRikawhNoZAhu
+  server: 51.170.190.140
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: yVKPB5WeYxyaTioROYKKNwo3BlzJLFfUpUbI7ue6zVk=
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇿🇦 ZA 01 - xiaohe
+  - 🇸🇪 SE 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇿🇦 ZA 01 - xiaohe
+  - 🇸🇪 SE 01 - xiaohe
 rules:
 - MATCH,PROXIES
