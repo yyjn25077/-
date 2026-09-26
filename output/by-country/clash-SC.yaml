@@ -33,19 +33,6 @@ proxies:
       Host: vms.lifetime37.workers.dev
 - name: 🇸🇨 SC 03 - xiaohe
   type: vless
-  server: 45.130.125.201
-  port: 80
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: nahan-core.netizo09.workers.dev
-- name: 🇸🇨 SC 04 - xiaohe
-  type: vless
   server: 154.211.8.227
   port: 2087
   uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
@@ -66,7 +53,6 @@ proxy-groups:
   - 🇸🇨 SC 01 - xiaohe
   - 🇸🇨 SC 02 - xiaohe
   - 🇸🇨 SC 03 - xiaohe
-  - 🇸🇨 SC 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -75,6 +61,5 @@ proxy-groups:
   - 🇸🇨 SC 01 - xiaohe
   - 🇸🇨 SC 02 - xiaohe
   - 🇸🇨 SC 03 - xiaohe
-  - 🇸🇨 SC 04 - xiaohe
 rules:
 - MATCH,PROXIES
