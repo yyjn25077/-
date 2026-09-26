@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇨🇱 CL 01 - xiaohe
   type: vless
-  server: platform101.golnamakcert.top
+  server: platform108.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -14,9 +14,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform101
+    path: /platform108
     headers:
-      Host: platform101.halalkhor.info
+      Host: platform108.halalkhor.info
 - name: 🇨🇱 CL 02 - xiaohe
   type: vless
   server: platform103.golnamakcert.top
@@ -32,7 +32,7 @@ proxies:
       Host: platform103.halalkhor.info
 - name: 🇨🇱 CL 03 - xiaohe
   type: vless
-  server: platform115.golnamakcert.top
+  server: platform101.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -40,9 +40,48 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform115
+    path: /platform101
     headers:
-      Host: platform115.halalkhor.info
+      Host: platform101.halalkhor.info
+- name: 🇨🇱 CL 04 - xiaohe
+  type: vless
+  server: platform107.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform107
+    headers:
+      Host: platform107.golnamakcert.top
+- name: 🇨🇱 CL 05 - xiaohe
+  type: vless
+  server: platform106.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform106
+    headers:
+      Host: platform106.golnamakcert.top
+- name: 🇨🇱 CL 06 - xiaohe
+  type: vless
+  server: platform107.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform107
+    headers:
+      Host: platform107.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,6 +90,9 @@ proxy-groups:
   - 🇨🇱 CL 01 - xiaohe
   - 🇨🇱 CL 02 - xiaohe
   - 🇨🇱 CL 03 - xiaohe
+  - 🇨🇱 CL 04 - xiaohe
+  - 🇨🇱 CL 05 - xiaohe
+  - 🇨🇱 CL 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,5 +101,8 @@ proxy-groups:
   - 🇨🇱 CL 01 - xiaohe
   - 🇨🇱 CL 02 - xiaohe
   - 🇨🇱 CL 03 - xiaohe
+  - 🇨🇱 CL 04 - xiaohe
+  - 🇨🇱 CL 05 - xiaohe
+  - 🇨🇱 CL 06 - xiaohe
 rules:
 - MATCH,PROXIES
