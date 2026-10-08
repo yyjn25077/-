@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaohe
-  type: ss
-  server: 45.149.114.171
-  port: 777
-  cipher: chacha20-ietf-poly1305
-  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
-  udp: true
-- name: 🇫🇮 FI 02 - xiaohe
   type: vless
   server: 144.31.99.252
   port: 443
@@ -25,6 +18,13 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
+- name: 🇫🇮 FI 02 - xiaohe
+  type: ss
+  server: 45.149.114.171
+  port: 777
+  cipher: chacha20-ietf-poly1305
+  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
+  udp: true
 - name: 🇫🇮 FI 03 - xiaohe
   type: ss
   server: 185.103.110.68
