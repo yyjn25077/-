@@ -12,32 +12,6 @@ proxies:
   password: eicdhshSrFLCx/sZ1PSpuKyoVWGZpU95tFS4iGC1c04=
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  type: vless
-  server: 79.174.92.222
-  port: 443
-  uuid: 03ca8c3f-e777-45b5-a1b1-592094ca99ee
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: _PYBo3dyZRpGC44vADqcmlBCSeAVh1X8l3mulghVsTI
-  servername: m.vk.com
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  type: vless
-  server: 194.226.121.119
-  port: 443
-  uuid: ec6f8131-7a5d-4117-9627-6fb2b39ae0da
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: drive.korroh.com
-  network: ws
-  ws-opts:
-    path: /remote.php/dav/89f7661a0011ce46
-    headers:
-      Host: drive.korroh.com
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   type: ss
   server: 46.29.166.27
   port: 20221
@@ -51,8 +25,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -60,7 +32,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
 rules:
 - MATCH,PROXIES
