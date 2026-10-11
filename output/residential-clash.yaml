@@ -6,9 +6,9 @@ log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
   type: vless
-  server: 60.248.219.53
+  server: 60.248.219.54
   port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  uuid: 06e177f7-240d-4687-bd85-235505801a5e
   udp: true
   tls: true
   skip-cert-verify: true
@@ -17,7 +17,7 @@ proxies:
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: 60.248.219.53
+      Host: 60.248.219.54
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
   type: vless
   server: 103.148.73.173
@@ -32,7 +32,21 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 103.148.73.173
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+- name: 🇺🇸 美国 (United States) 03 (家宽) - xiaohe
+  type: vless
+  server: 104.21.88.201
+  port: 443
+  uuid: 07f9bc85-613f-4a33-8da1-191973c43c0a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: app-q0zc4t.user-4gfyh5.workers.dev
+  network: ws
+  ws-opts:
+    path: /cmh
+    headers:
+      Host: app-q0zc4t.user-4gfyh5.workers.dev
+- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
   type: vless
   server: 103.180.20.108
   port: 8443
@@ -53,7 +67,8 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 03 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +76,7 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 03 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
