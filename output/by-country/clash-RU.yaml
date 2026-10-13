@@ -1,0 +1,43 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: 52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  type: vless
+  server: 8.47.69.9
+  port: 443
+  uuid: 11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: ancient-heart-60c5.dpccgizieb.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+rules:
+- MATCH,PROXIES
