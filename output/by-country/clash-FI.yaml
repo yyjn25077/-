@@ -15,16 +15,8 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 02 - xiaohe
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 03 - xiaohe
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -36,6 +28,14 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: chrome
+- name: 🇫🇮 FI 03 - xiaohe
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇫🇮 FI 04 - xiaohe
   type: vless
   server: 95.216.27.15
@@ -59,7 +59,7 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇫🇮 FI 06 - xiaohe
   type: vless
   server: edge10.cyrionflare.com
@@ -69,6 +69,14 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇫🇮 FI 07 - xiaohe
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇮 FI 08 - xiaohe
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -93,6 +101,7 @@ proxy-groups:
   - 🇫🇮 FI 05 - xiaohe
   - 🇫🇮 FI 06 - xiaohe
   - 🇫🇮 FI 07 - xiaohe
+  - 🇫🇮 FI 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -105,5 +114,6 @@ proxy-groups:
   - 🇫🇮 FI 05 - xiaohe
   - 🇫🇮 FI 06 - xiaohe
   - 🇫🇮 FI 07 - xiaohe
+  - 🇫🇮 FI 08 - xiaohe
 rules:
 - MATCH,PROXIES
