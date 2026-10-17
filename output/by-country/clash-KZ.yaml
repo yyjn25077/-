@@ -6,6 +6,18 @@ log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - xiaohe
   type: vless
+  server: 77.73.232.61
+  port: 19747
+  uuid: 2a9ed01e-5455-44b4-a66a-76ee8165f0ac
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇰🇿 KZ 02 - xiaohe
+  type: vless
   server: 109.248.170.119
   port: 13447
   uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
@@ -16,17 +28,33 @@ proxies:
     public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
   servername: yahoo.com
   client-fingerprint: chrome
+- name: 🇰🇿 KZ 03 - xiaohe
+  type: vless
+  server: 83.222.23.81
+  port: 38065
+  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
+  servername: yahoo.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇿 KZ 01 - xiaohe
+  - 🇰🇿 KZ 02 - xiaohe
+  - 🇰🇿 KZ 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇰🇿 KZ 01 - xiaohe
+  - 🇰🇿 KZ 02 - xiaohe
+  - 🇰🇿 KZ 03 - xiaohe
 rules:
 - MATCH,PROXIES
