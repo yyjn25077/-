@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 03 - xiaohe
   type: vless
   server: 95.216.27.15
@@ -64,7 +64,7 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇫🇮 FI 06 - xiaohe
   type: vless
   server: 95.216.27.15
