@@ -17,17 +17,21 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 02 - xiaohe
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  type: vmess
+  server: seoul02.zgjok.com
+  port: 443
+  uuid: 1a1e5196-eab4-4772-9012-65c27f19a524
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-  servername: www.cloudflare.com
-  client-fingerprint: random
+  servername: ''
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
