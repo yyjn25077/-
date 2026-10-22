@@ -34,7 +34,7 @@ proxies:
       Host: vpn.cintaku.qzz.io
 - name: 🇨🇳 CN 03 - xiaohe
   type: vless
-  server: 188.114.98.0
+  server: vpn.cintaku.qzz.io
   port: 443
   uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
   udp: true
