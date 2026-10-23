@@ -6,18 +6,17 @@ log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
   type: vless
-  server: 104.18.155.229
-  port: 443
-  uuid: 42026ed0-7d74-4585-8e46-0fe6aa4d665a
+  server: forwarded.frnhk.xyz
+  port: 46004
+  uuid: 3c5f522d-6695-474f-abcf-2b1a65d503fa
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: www.genflix.co.id.r3xxe.eu.cc
   network: ws
   ws-opts:
-    path: /au-do
+    path: /aus1023
     headers:
-      Host: www.genflix.co.id.r3xxe.eu.cc
+      Host: forwarded.frnhk.xyz
 proxy-groups:
 - name: PROXIES
   type: select
