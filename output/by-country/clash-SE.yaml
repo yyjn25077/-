@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaohe
   type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  server: 77.110.97.245
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /vless
+    path: /fp=chromefp=chrome
     headers:
-      Host: 5.178.109.174
+      Host: ccc.010304.xyz
 - name: 🇸🇪 SE 02 - xiaohe
   type: vless
   server: 193.188.21.253
@@ -58,18 +59,17 @@ proxies:
       Host: 193.188.21.253
 - name: 🇸🇪 SE 05 - xiaohe
   type: vless
-  server: 77.110.97.245
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chromefp=chrome
+    path: /vless
     headers:
-      Host: ccc.010304.xyz
+      Host: 5.178.109.174
 - name: 🇸🇪 SE 06 - xiaohe
   type: vless
   server: 191.44.114.179
