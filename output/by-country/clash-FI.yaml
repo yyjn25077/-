@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaohe
   type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  server: hw6.divarkhaghazi.com
+  port: 465
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: hw6.divarkhaghazi.com.
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: 45.144.234.157
+      Host: hw6.divarkhaghazi.com.
 - name: 🇫🇮 FI 02 - xiaohe
   type: vless
   server: 45.144.234.157
@@ -46,32 +47,31 @@ proxies:
       Host: hw6.divarkhaghazi.com.
 - name: 🇫🇮 FI 04 - xiaohe
   type: vless
-  server: hw6.divarkhaghazi.com
-  port: 465
-  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  server: 84.22.150.39
+  port: 7443
+  uuid: 9d5cbb90-876b-448d-9874-27ab35bae6e7
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hw6.divarkhaghazi.com.
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /@Marisa_kristi
     headers:
-      Host: hw6.divarkhaghazi.com.
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
 - name: 🇫🇮 FI 05 - xiaohe
   type: vless
-  server: 65.109.211.81
-  port: 465
-  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: hw6.divarkhaghazi.com
   network: ws
   ws-opts:
-    path: /
+    path: /vless
     headers:
-      Host: hw6.divarkhaghazi.com.
+      Host: 45.144.234.157
 proxy-groups:
 - name: PROXIES
   type: select
