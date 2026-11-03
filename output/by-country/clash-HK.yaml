@@ -6,19 +6,20 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
   type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  server: 47.243.167.44
+  port: 443
+  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
   alterId: 0
   cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: rhHiErkwRf6fHs2H.v.3dns.vip
   network: ws
   ws-opts:
-    path: /
+    path: /ws-vmess
     headers:
-      Host: ''
+      Host: rhHiErkwRf6fHs2H.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
   type: vmess
   server: 47.244.120.197
@@ -35,17 +36,10 @@ proxies:
     headers:
       Host: ''
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
-  type: ss
-  server: 38.54.85.230
-  port: 8445
-  cipher: 2022-blake3-aes-128-gcm
-  password: +SpI6Aj5R5Tex6qKfWF3Zw==
-  udp: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
   type: vmess
   server: 47.244.120.197
-  port: 36703
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  port: 23026
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
   alterId: 0
   cipher: auto
   udp: true
@@ -55,8 +49,8 @@ proxies:
   ws-opts:
     path: /arki
     headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
+      Host: 47.244.120.197
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
   type: vmess
   server: 47.243.65.243
   port: 443
@@ -72,22 +66,94 @@ proxies:
     path: /ws-vmess
     headers:
       Host: lcv8v9l7oyamxxfz.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
   type: vmess
-  server: 47.243.167.44
+  server: 47.243.153.153
   port: 443
-  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: rhHiErkwRf6fHs2H.v.3dns.vip
+  servername: i2psm3knof5qjjix.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: rhHiErkwRf6fHs2H.v.3dns.vip
+      Host: i2psm3knof5qjjix.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
+  type: vmess
+  server: 47.244.120.197
+  port: 36703
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
+  type: vless
+  server: panel.trapxan.ir
+  port: 8443
+  uuid: be66e811-f281-4adb-93f3-faec7b8d88a3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: panel.trapxan.ir
+  network: ws
+  ws-opts:
+    path: /ArsalanVPN
+    headers:
+      Host: panel.trapxan.ir
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
+  type: vless
+  server: panel.trapxan.ir
+  port: 2053
+  uuid: be66e811-f281-4adb-93f3-faec7b8d88a3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: panel.trapxan.ir
+  network: ws
+  ws-opts:
+    path: /ArsalanVPN
+    headers:
+      Host: panel.trapxan.ir
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
+  type: vless
+  server: panel.trapxan.ir
+  port: 2087
+  uuid: be66e811-f281-4adb-93f3-faec7b8d88a3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: panel.trapxan.ir
+  network: ws
+  ws-opts:
+    path: /ArsalanVPN
+    headers:
+      Host: panel.trapxan.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -99,6 +165,10 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -110,5 +180,9 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
 rules:
 - MATCH,PROXIES
