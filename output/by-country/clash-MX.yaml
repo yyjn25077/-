@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇬 EG 01 - xiaohe
+- name: 🇲🇽 MX 01 - xiaohe
   type: ss
-  server: 38.54.59.102
-  port: 443
+  server: 64.177.90.30
+  port: 8388
   cipher: aes-256-gcm
-  password: pKEW8JPByTVTLtM
+  password: BWyPPTusFKhGgzKh
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇪🇬 EG 01 - xiaohe
+  - 🇲🇽 MX 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇬 EG 01 - xiaohe
+  - 🇲🇽 MX 01 - xiaohe
 rules:
 - MATCH,PROXIES
