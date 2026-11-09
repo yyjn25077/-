@@ -14,33 +14,17 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇭 TH 02 - xiaohe
-  type: vless
-  server: 103.107.53.42
-  port: 443
-  uuid: affb10d4-3835-4b1f-b5a3-3481489911b6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cat.ilovezhenjiu.top
-  network: ws
-  ws-opts:
-    path: /cgciws
-    headers:
-      Host: cat.ilovezhenjiu.top
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇭 TH 01 - xiaohe
-  - 🇹🇭 TH 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇭 TH 01 - xiaohe
-  - 🇹🇭 TH 02 - xiaohe
 rules:
 - MATCH,PROXIES
