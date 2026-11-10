@@ -5,16 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇽 MX 01 - xiaohe
-  type: vmess
-  server: 38.60.224.173
-  port: 32153
-  uuid: 5cf1f470-3f70-4589-a2a4-4657ea3a1edf
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇲🇽 MX 02 - xiaohe
   type: ss
   server: 64.177.90.30
   port: 8388
@@ -27,13 +17,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇲🇽 MX 01 - xiaohe
-  - 🇲🇽 MX 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇲🇽 MX 01 - xiaohe
-  - 🇲🇽 MX 02 - xiaohe
 rules:
 - MATCH,PROXIES
