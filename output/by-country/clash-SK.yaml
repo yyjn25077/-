@@ -4,29 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇱 PL 01 - xiaohe
+- name: 🇸🇰 SK 01 - xiaohe
   type: vless
-  server: d58daft.plp1.h1cloud.net
+  server: bbcdd4t.de-p2.h1clayd.click
   port: 443
-  uuid: c82031be-e90f-4b15-ab4f-7ccef236d3ca
+  uuid: 4618cebd-e1e9-45c3-be98-d9d6e3ee8bef
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: ixnCbdlT5sAVd-ilp2nG11CvnNsBCf9xPD56TlXxlR4
-  servername: d58daft.plp1.h1cloud.net
-  client-fingerprint: chrome
+    public-key: n9cdr2Qf9h3S_jf5Rcd15fl-4fxuztHvlexE7G-QvW8
+  servername: bbcdd4t.de-p2.h1clayd.click
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇵🇱 PL 01 - xiaohe
+  - 🇸🇰 SK 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇱 PL 01 - xiaohe
+  - 🇸🇰 SK 01 - xiaohe
 rules:
 - MATCH,PROXIES
