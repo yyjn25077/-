@@ -18,14 +18,12 @@ proxies:
     headers:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 02 - xiaohe
-  type: vless
-  server: 151.101.36.235
-  port: 443
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  type: ss
+  server: 115.161.136.145
+  port: 10099
+  cipher: chacha20-ietf-poly1305
+  password: '12242'
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: accounts.fastly.com
 - name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
   type: vless
   server: 152.69.226.63
