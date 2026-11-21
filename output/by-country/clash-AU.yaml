@@ -15,7 +15,7 @@ proxies:
   servername: portland-wins-robbie-skirt.trycloudflare.com
   network: ws
   ws-opts:
-    path: e0843c8ad581
+    path: /e0843c8ad581
     headers:
       Host: portland-wins-robbie-skirt.trycloudflare.com
 proxy-groups:
