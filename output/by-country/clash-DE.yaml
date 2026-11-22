@@ -6,89 +6,6 @@ log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - xiaohe
   type: vless
-  server: 82.139.235.44
-  port: 443
-  uuid: 4f17f94b-e725-4be8-92a4-0e4987578bcc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: ZHnkRCy0F75B26CsYwK-jRbIjWkr9u8uqX6frMtQORo
-  servername: cloudflare.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 02 - xiaohe
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 57.129.41.216
-- name: 🇩🇪 德国 (Germany) 03 - xiaohe
-  type: ss
-  server: 213.202.208.199
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 🇩🇪 德国 (Germany) 04 - xiaohe
-  type: vless
-  server: 94.103.168.62
-  port: 2087
-  uuid: 92a188aa-2e86-4557-bd30-b2079a70f824
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: uuyjnfbv.localip.ir
-- name: 🇩🇪 德国 (Germany) 05 - xiaohe
-  type: vless
-  server: 172.67.197.170
-  port: 443
-  uuid: 88e79aa6-f431-4453-8dcc-652a0c747198
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: o685y.save-node.com
-  network: ws
-  ws-opts:
-    path: /api/se1k2rfxlsuer3ry4u6e84kl8rqp721p
-    headers:
-      Host: o685y.save-node.com
-- name: 🇩🇪 德国 (Germany) 06 - xiaohe
-  type: vless
-  server: o685y.save-node.com
-  port: 443
-  uuid: 88e79aa6-f431-4453-8dcc-652a0c747198
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: o685y.save-node.com
-  network: ws
-  ws-opts:
-    path: /api/se1k2rfxlsuer3ry4u6e84kl8rqp721p
-    headers:
-      Host: o685y.save-node.com
-- name: 🇩🇪 德国 (Germany) 07 - xiaohe
-  type: vless
-  server: 91.107.188.129
-  port: 2083
-  uuid: bd6c11e0-0233-4fb1-ba97-8d5f16d7155f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: site.check-looks.space
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 91.107.188.129
-- name: 🇩🇪 德国 (Germany) 08 - xiaohe
-  type: vless
   server: 88.216.70.125
   port: 443
   uuid: 88e79aa6-f431-4453-8dcc-652a0c747198
@@ -101,41 +18,29 @@ proxies:
     path: /api/se1k2rfxlsuer3ry4u6e84kl8rqp721p
     headers:
       Host: o685y.save-node.com
-- name: 🇩🇪 德国 (Germany) 09 - xiaohe
+- name: 🇩🇪 德国 (Germany) 02 - xiaohe
+  type: vless
+  server: 152.53.120.90
+  port: 50955
+  uuid: 5ab065b0-2c7a-45a0-829d-9af9af7d8e05
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 03 - xiaohe
   type: ss
-  server: 57.129.83.85
+  server: 185.176.204.18
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇩🇪 德国 (Germany) 10 - xiaohe
+- name: 🇩🇪 德国 (Germany) 04 - xiaohe
   type: ss
-  server: 185.226.172.8
-  port: 8008
+  server: 193.108.117.84
+  port: 19999
   cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇩🇪 德国 (Germany) 11 - xiaohe
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 12 - xiaohe
-  type: ss
-  server: 47.254.167.157
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 13 - xiaohe
+- name: 🇩🇪 德国 (Germany) 05 - xiaohe
   type: vless
   server: 188.114.98.0
   port: 443
@@ -149,14 +54,104 @@ proxies:
     path: /api/se1k2rfxlsuer3ry4u6e84kl8rqp721p
     headers:
       Host: o685y.save-node.com
-- name: 🇩🇪 德国 (Germany) 14 - xiaohe
-  type: vless
-  server: 152.53.120.90
-  port: 50955
-  uuid: 5ab065b0-2c7a-45a0-829d-9af9af7d8e05
+- name: 🇩🇪 德国 (Germany) 06 - xiaohe
+  type: ss
+  server: 156.67.120.205
+  port: 51628
+  cipher: chacha20-ietf-poly1305
+  password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
   udp: true
-  tls: false
+- name: 🇩🇪 德国 (Germany) 07 - xiaohe
+  type: ss
+  server: 193.108.116.98
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 08 - xiaohe
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 09 - xiaohe
+  type: vless
+  server: 172.67.197.170
+  port: 443
+  uuid: 88e79aa6-f431-4453-8dcc-652a0c747198
+  udp: true
+  tls: true
   skip-cert-verify: true
+  servername: o685y.save-node.com
+  network: ws
+  ws-opts:
+    path: /api/se1k2rfxlsuer3ry4u6e84kl8rqp721p
+    headers:
+      Host: o685y.save-node.com
+- name: 🇩🇪 德国 (Germany) 10 - xiaohe
+  type: vless
+  server: 88.216.70.125
+  port: 443
+  uuid: 88e79aa6-f431-4453-8dcc-652a0c747198
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: o685y.save-node.com
+  network: ws
+  ws-opts:
+    path: /api/se1k2rfxlsuer3ry4u6e84kl8rqp721p
+    headers:
+      Host: o685y.save-node.com
+- name: 🇩🇪 德国 (Germany) 11 - xiaohe
+  type: vless
+  server: 91.107.188.129
+  port: 2083
+  uuid: bd6c11e0-0233-4fb1-ba97-8d5f16d7155f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: site.check-looks.space
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 91.107.188.129
+- name: 🇩🇪 德国 (Germany) 12 - xiaohe
+  type: vless
+  server: cabinet.filnex.baby
+  port: 443
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: claywick.elvano.website
+  network: ws
+  ws-opts:
+    path: /api/de7/stream
+    headers:
+      Host: cabinet.filnex.baby
+- name: 🇩🇪 德国 (Germany) 13 - xiaohe
+  type: vless
+  server: 172.67.197.170
+  port: 443
+  uuid: 88e79aa6-f431-4453-8dcc-652a0c747198
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: o685y.save-node.com
+  network: ws
+  ws-opts:
+    path: /api/se1k2rfxlsuer3ry4u6e84kl8rqp721p
+    headers:
+      Host: o685y.save-node.com
+- name: 🇩🇪 德国 (Germany) 14 - xiaohe
+  type: ss
+  server: 193.108.118.247
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - name: 🇩🇪 德国 (Germany) 15 - xiaohe
   type: vless
   server: 88.216.70.125
@@ -172,36 +167,39 @@ proxies:
     headers:
       Host: o685y.save-node.com
 - name: 🇩🇪 德国 (Germany) 16 - xiaohe
-  type: ss
-  server: 156.67.120.205
-  port: 51628
-  cipher: chacha20-ietf-poly1305
-  password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
-  udp: true
-- name: 🇩🇪 德国 (Germany) 17 - xiaohe
-  type: vless
-  server: 88.216.70.125
-  port: 443
-  uuid: 88e79aa6-f431-4453-8dcc-652a0c747198
+  type: vmess
+  server: 193.108.117.61
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: o685y.save-node.com
+  servername: ''
+- name: 🇩🇪 德国 (Germany) 17 - xiaohe
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /api/se1k2rfxlsuer3ry4u6e84kl8rqp721p
+    path: /vless/
     headers:
-      Host: o685y.save-node.com
+      Host: OV-Germany1.09vpn.com
 - name: 🇩🇪 德国 (Germany) 18 - xiaohe
   type: ss
-  server: static.28.210.29.2.clients.your-server.de
-  port: 25565
-  cipher: chacha20-ietf-poly1305
-  password: C8ZJ7R4p_HHJ32cst7ilT-0Zi2F22hAc
+  server: 193.108.119.83
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇩🇪 德国 (Germany) 19 - xiaohe
   type: vless
-  server: 188.114.98.0
+  server: o685y.save-node.com
   port: 443
   uuid: 88e79aa6-f431-4453-8dcc-652a0c747198
   udp: true
@@ -215,14 +213,21 @@ proxies:
       Host: o685y.save-node.com
 - name: 🇩🇪 德国 (Germany) 20 - xiaohe
   type: ss
-  server: 185.176.204.18
+  server: 193.108.117.111
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇩🇪 德国 (Germany) 21 - xiaohe
+  type: ss
+  server: static.28.210.29.2.clients.your-server.de
+  port: 25565
+  cipher: chacha20-ietf-poly1305
+  password: C8ZJ7R4p_HHJ32cst7ilT-0Zi2F22hAc
+  udp: true
+- name: 🇩🇪 德国 (Germany) 22 - xiaohe
   type: vless
-  server: 88.216.70.125
+  server: o685y.save-node.com
   port: 443
   uuid: 88e79aa6-f431-4453-8dcc-652a0c747198
   udp: true
@@ -234,27 +239,13 @@ proxies:
     path: /api/se1k2rfxlsuer3ry4u6e84kl8rqp721p
     headers:
       Host: o685y.save-node.com
-- name: 🇩🇪 德国 (Germany) 22 - xiaohe
-  type: vless
-  server: 152.53.120.90
-  port: 50955
-  uuid: 5ab065b0-2c7a-45a0-829d-9af9af7d8e05
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 23 - xiaohe
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  type: ss
+  server: 185.176.204.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
 - name: 🇩🇪 德国 (Germany) 24 - xiaohe
   type: vless
   server: 88.216.70.125
@@ -268,22 +259,58 @@ proxies:
   ws-opts:
     path: /api/se1k2rfxlsuer3ry4u6e84kl8rqp721p
     headers:
-      Host: o685y.save-node.com
+      Host: 88.216.70.125
 - name: 🇩🇪 德国 (Germany) 25 - xiaohe
+  type: ss
+  server: 57.129.83.85
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 26 - xiaohe
   type: vless
-  server: 172.67.197.170
-  port: 443
-  uuid: 88e79aa6-f431-4453-8dcc-652a0c747198
+  server: 94.103.168.62
+  port: 2087
+  uuid: 92a188aa-2e86-4557-bd30-b2079a70f824
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: o685y.save-node.com
-  network: ws
-  ws-opts:
-    path: /api/se1k2rfxlsuer3ry4u6e84kl8rqp721p
-    headers:
-      Host: o685y.save-node.com
-- name: 🇩🇪 德国 (Germany) 26 - xiaohe
+  servername: uuyjnfbv.localip.ir
+- name: 🇩🇪 德国 (Germany) 27 - xiaohe
+  type: vless
+  server: uuyjnfbv.localip.ir
+  port: 2087
+  uuid: 92a188aa-2e86-4557-bd30-b2079a70f824
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: uuyjnfbv.localip.ir
+- name: 🇩🇪 德国 (Germany) 28 - xiaohe
+  type: vless
+  server: 94.103.168.62
+  port: 2087
+  uuid: 92a188aa-2e86-4557-bd30-b2079a70f824
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: uuyjnfbv.localip.ir
+- name: 🇩🇪 德国 (Germany) 29 - xiaohe
+  type: vless
+  server: 94.103.168.62
+  port: 2087
+  uuid: 92a188aa-2e86-4557-bd30-b2079a70f824
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: uuyjnfbv.localip.ir
+- name: 🇩🇪 德国 (Germany) 30 - xiaohe
+  type: ss
+  server: 213.202.208.199
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇩🇪 德国 (Germany) 31 - xiaohe
   type: vless
   server: 88.216.70.125
   port: 443
@@ -296,23 +323,28 @@ proxies:
   ws-opts:
     path: /api/se1k2rfxlsuer3ry4u6e84kl8rqp721p
     headers:
-      Host: 88.216.70.125
-- name: 🇩🇪 德国 (Germany) 27 - xiaohe
+      Host: o685y.save-node.com
+- name: 🇩🇪 德国 (Germany) 32 - xiaohe
   type: ss
-  server: 185.176.204.18
+  server: 178.162.254.38
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
+- name: 🇩🇪 德国 (Germany) 33 - xiaohe
+  type: ss
+  server: 23.157.88.43
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇩🇪 德国 (Germany) 28 - xiaohe
-  type: vless
-  server: 94.103.168.62
-  port: 2087
-  uuid: 92a188aa-2e86-4557-bd30-b2079a70f824
+- name: 🇩🇪 德国 (Germany) 34 - xiaohe
+  type: ss
+  server: 47.254.167.157
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: uuyjnfbv.localip.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -346,6 +378,12 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 26 - xiaohe
   - 🇩🇪 德国 (Germany) 27 - xiaohe
   - 🇩🇪 德国 (Germany) 28 - xiaohe
+  - 🇩🇪 德国 (Germany) 29 - xiaohe
+  - 🇩🇪 德国 (Germany) 30 - xiaohe
+  - 🇩🇪 德国 (Germany) 31 - xiaohe
+  - 🇩🇪 德国 (Germany) 32 - xiaohe
+  - 🇩🇪 德国 (Germany) 33 - xiaohe
+  - 🇩🇪 德国 (Germany) 34 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -379,5 +417,11 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 26 - xiaohe
   - 🇩🇪 德国 (Germany) 27 - xiaohe
   - 🇩🇪 德国 (Germany) 28 - xiaohe
+  - 🇩🇪 德国 (Germany) 29 - xiaohe
+  - 🇩🇪 德国 (Germany) 30 - xiaohe
+  - 🇩🇪 德国 (Germany) 31 - xiaohe
+  - 🇩🇪 德国 (Germany) 32 - xiaohe
+  - 🇩🇪 德国 (Germany) 33 - xiaohe
+  - 🇩🇪 德国 (Germany) 34 - xiaohe
 rules:
 - MATCH,PROXIES
