@@ -6,18 +6,16 @@ log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaohe
   type: vless
-  server: xray-ikmqcro3-rapid-river-6.cloady.io
+  server: 178.212.35.198
   port: 443
-  uuid: 213224a4-6cd1-b7f4-8bbc-4f50e5ed847b
+  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xray-ikmqcro3-rapid-river-6.cloady.io
-  network: ws
-  ws-opts:
-    path: /c54a815e676d9acc
-    headers:
-      Host: xray-ikmqcro3-rapid-river-6.cloady.io
+  reality-opts:
+    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 02 - xiaohe
   type: vless
   server: in.smrtai.top
@@ -44,17 +42,18 @@ proxies:
   client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 04 - xiaohe
   type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  server: xray-ikmqcro3-rapid-river-6.cloady.io
+  port: 443
+  uuid: 213224a4-6cd1-b7f4-8bbc-4f50e5ed847b
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: xray-ikmqcro3-rapid-river-6.cloady.io
   network: ws
   ws-opts:
-    path: /vless
+    path: /c54a815e676d9acc
     headers:
-      Host: 13.140.56.100
+      Host: xray-ikmqcro3-rapid-river-6.cloady.io
 - name: 🇮🇳 印度 (India) 05 - xiaohe
   type: vless
   server: 13.140.56.100
